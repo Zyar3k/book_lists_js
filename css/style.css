@@ -1,5 +1,132 @@
-.bookList .bookBox {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: lightgrey;
+  font-size: 20px;
+  color: #011627;
+  background: #DDD78D;
+}
+
+.bookList {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.bookBox {
+  background: #DCBF85;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 380px;
+  height: 180px;
+  margin: 10px;
+  padding: 6px;
+  padding-bottom: 0;
+  border-radius: 6px;
+  box-shadow: 0 0 3px black;
+}
+
+.bookInfo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  height: 39px;
+  border-bottom: 1px solid black;
+}
+
+.bookInfo .infoDet {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 40%;
+}
+
+.bookInfo .infoDet a {
+  text-decoration: none;
+  color: #15B097;
+}
+
+.bookInfo .pageWrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 80%;
+}
+
+.bookInfo .pageWrapper .bookPage {
+  width: 50%;
+}
+
+.bookInfo .pageWrapper .bookPage i {
+  margin-right: 6px;
+  color: grey;
+}
+
+.bookInfo .pageWrapper .bookTime {
+  width: 50%;
+}
+
+.bookInfo .pageWrapper .bookTime i {
+  color: goldenrod;
+  margin-right: 6px;
+}
+
+.bookTitle {
+  height: 60px;
+  font-size: 26px;
+  padding: 10px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.bookAuthor {
+  height: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10px 0;
+}
+
+.myInfo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  color: grey;
+  height: 39px;
+  border-top: 1px solid black;
+}
+
+.myInfo i.fa-check-double {
+  color: #4392F1;
+}
+
+.myInfo i.fa-tablet-alt {
+  color: green;
 }
 /*# sourceMappingURL=style.css.map */
