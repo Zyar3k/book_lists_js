@@ -114,10 +114,6 @@ header {
     align-items: center;
     width: 40%;
 
-    .bookNo {
-      // color: red;
-    }
-
     a {
       text-decoration: none;
       color: green;
@@ -209,7 +205,6 @@ header {
   }
 }
 
-
 @media (max-width: 998px) {
   header {
   
@@ -229,6 +224,10 @@ header {
       }
     }
   }
+
+  .bookList {
+    margin-top: 220px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -246,10 +245,8 @@ header {
       justify-content: center;
       align-items: flex-start;
       padding: 6px 20px;
-      font-weight: regular;
   
       .bookStat {
-  
         display: flex;
         flex-direction: row;
         align-items: center;

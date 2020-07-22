@@ -246,6 +246,9 @@ header .statsWrapp .bookStat .unavailableNo.digitBook {
     -ms-flex-direction: column;
         flex-direction: column;
   }
+  .bookList {
+    margin-top: 220px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -263,7 +266,6 @@ header .statsWrapp .bookStat .unavailableNo.digitBook {
     -ms-flex-align: start;
         align-items: flex-start;
     padding: 6px 20px;
-    font-weight: regular;
   }
   header .statsWrapp .bookStat {
     display: -ms-flexbox;
