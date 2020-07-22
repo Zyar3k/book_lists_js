@@ -10,8 +10,41 @@
 </head>
 <body>
 
+	<header>
+		<h1><span class="allBooks"></span> tytułów BBC – lista książek, które trzeba przeczytać!</h1>
+		<div class="statsWrapp">
+			<div class="bookStat"><input name="sortBooks" type="radio" id="allBooks" checked><label for="allBooks">wszystkie - </label><span class="allBooks digitBook"></span></input></div>
+			<div class="bookStat"><input name="sortBooks" type="radio" id="readedBtn"><label for="readedBtn">przeczytane - </label><span class="readedNo digitBook"></span></input></div>
+			<div class="bookStat"><input name="sortBooks" type="radio" id="unReadedBtn"><label for="unReadedBtn">nieprzeczytane - </label><span class="unreadedNo digitBook"></span></input></div>
+
+			<div class="bookStat"><input name="sortBooks" type="radio" id="availableBtn"><label for="availableBtn">posiadane - </label><span class="availableNo digitBook"></span></input></div>
+			<div class="bookStat"><input name="sortBooks" type="radio" id="unavailableBtn"><label for="unavailableBtn">niedostepne - </label><span class="unavailableNo digitBook"></span></input></div>
+
+		</div>
+	</header>
+
 	<section class="bookList">
+
+		<div class="test"></div>
 		<!-- rendered books -->
+		<!-- <div class="bookBox">
+			<div class="bookInfo">
+				<div class="infoDet">
+					<div id="index" class="bookNo"></div>
+					<a href="" target='_blank' rel='noopener noreferrer'><i class="fas fa-info-circle"></i></a>
+				</div>
+				<div class="pageWrapper">
+					<div class="bookPage"><i class="fas fa-book-open"></i></div>
+					<div class="bookTime"><i class="far fa-clock"></i>5h30min</div>
+				</div>
+			</div>
+			<div class="bookTitle"></div>
+			<div class="bookAuthor" id="author"></div>
+			<div class="myInfo">
+				<i class="fas fa-check-double"></i>
+				<i class="fas fa-tablet-alt"></i>
+			</div>
+		</div> -->
 	</section>
 
 

@@ -4,21 +4,59 @@
 }
 
 body {
-  background: lightgrey;
+  // background: lightgrey;
   font-size: 20px;
   color: #011627;
+  // background: #DDD78D;
+
+  
+}
+
+header {
+  border-bottom: 2px solid black;
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: #DDD78D;
+  z-index: 997;
+
+  h1 {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .statsWrapp {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+
+    .bookStat {
+
+      input {
+        cursor: pointer;
+        margin-right: 10px;
+        label {
+  
+  
+        }
+      }
+
+      .digitBook {
+        color: red;
+      }
+    }
+  }
 }
 
 .bookList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+  margin-top: 155px;
 }
 
 .bookBox {
-  background: #DCBF85;
   display: flex;
   flex-direction: column;
   width: 380px;
@@ -26,9 +64,22 @@ body {
   margin: 10px;
   padding: 6px;
   padding-bottom: 0;
-  border-radius: 6px;
-  box-shadow: 0 0 3px black;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 0 3px black; 
 
+  &.hide {
+    display: none;
+  }
+
+  &.trueRead {
+    // background: rgba(0, 128, 0, 0.2);
+    background: #5EFC8D;
+  }
+  &.falseRead {
+    // background: rgba(0, 0, 139, 0.2);
+    background: #8EF9F3;
+  }
 }
 
 .bookInfo {
@@ -51,10 +102,29 @@ body {
 
     a {
       text-decoration: none;
-      color: #15B097;
-      i {
-  
+      // color: #15B097;
+      color: green;
+      
+
+      &:hover {
+        color: red;
+        transform: scale(1.5);
       }
+      i {
+        animation: appear 1.5s ease infinite alternate;
+      }
+
+      @keyframes appear {
+        from {
+          opacity: 0.3;
+          transform: scale(1);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1.3);
+        }
+      }
+      
     }
   }
 
@@ -87,8 +157,9 @@ body {
   font-size: 26px;
   padding: 10px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .bookAuthor {
@@ -97,21 +168,27 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
+  font-style: italic;
 }
 
 .myInfo {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: grey;
+  color: rgba(128, 128, 128, 0.3);
   height: 39px;
   border-top: 1px solid black;
 
-  i.fa-check-double {
-    color: #4392F1;
+  .fa-check-double {
+    &.true {
+      color: blue;
+    }
   }
 
-  i.fa-tablet-alt {
-    color: green;
+  .fa-tablet-alt {
+    &.true {
+      color: orangered;
+    }
   }
 }
+
