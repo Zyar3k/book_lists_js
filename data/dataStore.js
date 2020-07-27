@@ -1,4 +1,4 @@
-const bookData = {
+let bookData = {
   books: [
     {
       key: 0,
@@ -902,3 +902,6 @@ const bookData = {
     },
   ],
 };
+
+
+module.exports = db;

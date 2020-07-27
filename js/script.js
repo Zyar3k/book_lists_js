@@ -10,7 +10,7 @@ return  params
 };
 
 function renderBooks() {
-  booksWrapper.innerHTML = bookList.map((book, key) => 
+  booksWrapper.innerHTML = bookList.map((book, key) =>
     `
     <div class="bookBox ${book.readed}Read ${book.available}Avbl">
       <div class="bookInfo">
@@ -72,12 +72,12 @@ representMainDetails();
 
 
 function mainFilter() {
-  
+
   const boxes = document.querySelectorAll('.bookBox');
   const redtrue = document.querySelectorAll('.trueRead');
-  const redfalse = document.querySelectorAll('.falseRead');  
-  const avblTrue = document.querySelectorAll('.trueAvbl');  
-  const avblFalse = document.querySelectorAll('.falseAvbl');  
+  const redfalse = document.querySelectorAll('.falseRead');
+  const avblTrue = document.querySelectorAll('.trueAvbl');
+  const avblFalse = document.querySelectorAll('.falseAvbl');
   const allBooksBtn = document.querySelector('#allBooks');
   const readedBtn = document.querySelector('#readedBtn');
   const unReadedBtn = document.querySelector('#unReadedBtn');
@@ -89,18 +89,18 @@ function mainFilter() {
       box.classList.remove('hide');
     });
   });
-  
+
   readedBtn.addEventListener('click', () => {
     boxes.forEach(box => {
       box.classList.add('hide');
     });
-    if (redtrue) {  
-      for (const ite of redtrue) {        
+    if (redtrue) {
+      for (const ite of redtrue) {
         ite.classList.remove('hide');
       }
     }
   });
-  
+
   unReadedBtn.addEventListener('click', () => {
     boxes.forEach(box => {
       box.classList.add('hide');
